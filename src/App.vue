@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Home</a>
+  <a class="navbar-brand" href="/about">About Me</a>
+  <a class="navbar-brand" href="/projects">My Works</a>
+  <a class="navbar-brand" href="/contact">Contact Me</a>
+</nav>
+   <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+  
   }
 }
 </script>
 
-<style>
+<style lang="scss" >
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Srisakdi:wght@700&display=swap');
+
 #app {
+  .navbar {
+    margin-bottom: 40px;
+    }
+    .navbar-brand {
+      color: rgb(238, 90, 90);
+      font-weight: bold;
+      font-family: Roboto Condensed, sans-serif;
+  }
+  overflow: auto;
+  height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: rgb(233, 131, 131);
+background-color: #050403;
+background-image: linear-gradient(132deg, #050403 0%, #6fe5ca 100%);
+
 }
 </style>

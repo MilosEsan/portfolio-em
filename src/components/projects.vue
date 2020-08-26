@@ -1,6 +1,7 @@
 <template>
 <div class="container">
     <h1>My Works </h1>
+     <hr>
     <ul v-for="(project, index) in projects" v-bind:key="index">
        <div class="project"> 
            <h3>{{project.name}}</h3>
@@ -10,8 +11,19 @@
    <p class="level" v-if="project.id == 2"><small>Difficulty Level:</small>
       considerably MUCH EASIER 
    </p>
+
+   <ul class="check">
+   <li v-if="project.live"> Check how this work looks like <a href="#">here</a>. </li>
+   <li> Check more of description <a href="#">here</a>. </li>
+   <li> Check the <a href="#">source code</a> on github.</li>
+   </ul>
+   
         <a><img :src="project.img"></a>
-        <p class="desc">{{project.describe}}</p>
+        <p class="desc">
+            <span>SHORT DECRIPTION:</span>
+            <br>
+            {{project.describe}}
+            </p>
        </div>
         <hr>
     </ul>
@@ -34,36 +46,42 @@ export default {
             {
                 name: "library-app",
                 img: img1,
+                live: true,
                 id: 1,
                 describe: "Simple library with functionalities in line with book-renting concept."
                 },
             {
                 name: "freelance project - WORDPRESS WEBSITE",
                 img: img2,
+                live: true,
                 id: 1,
                 describe: "A custom website made for remodeling company. Everything is done by customer's requests. Wordpress technology is used."
                 },
             {
                 name: "to-do-app",
                 img: img3,
+                live: true,
                 id: 1,
-                describe: "Simple application with some of basic functionalities vue.js functionalities. This app's purpose was to make it's maker familiar with vue.js. "
+                describe: "Simple application with some of basic functionalities based on vue.js directives and methods. This app's purpose was to make it's maker familiar with vue.js. "
                 },
             {
                 name: "create-read service",
                 img: img4,
+                live: true,
                 id: 2,
                 describe: "This work contains some server-side code applied. Accent is placed on putting in use node.js and express.js coding."
                 },
             {
                 name: "some react pages",
                 img: img5,
+                live: false,
                 id: 2,
-                describe: "Some pages with custom design coded in react. Although this work is not really important nor it's finished, it's layout is something that I personally like to display."
+                describe: "Some pages with custom design coded in react. Although this work is not really important nor it's finished - it's layout is something that I personally like to display."
                 },
             {
                 name: "concatScript",
                 img: img6,
+                live: false,
                 id: 2,
                 describe: "Python functionalities for simple work with *mp4 files. It utilizes linux commands of FFMPEG libary."
                 },
@@ -75,9 +93,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+hr {
+    height: 1px;
+    background-color: rgb(233, 131, 131) ;
+}
+
 h1 {
   font-family: 'Permanent Marker', cursive;
   margin-bottom: 50px;
+}
+
+.check {
+    display: none;
 }
 
 .container {
@@ -95,10 +123,17 @@ h1 {
         }
     }
     .desc {
-       width: 150px;
-       float: right;
+
+       min-width: 200px;
+       max-width: 700px;
+      margin-top: 35px;
        font-weight: bold;
-       margin-top: -40px;
+       margin-left: 10%;
+       color: rgb(248, 79, 79) ;
+       span {
+            color: yellow;
+            font-weight: bold;
+        }
     }
 }
 
@@ -114,11 +149,37 @@ img {
     height: 200px;
 }
 
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 780px) and (max-width: 2500px) {
     .desc {
-        float: inherit;
-        margin-top: 0px;
+        margin-top: 35px;
+        float: right;
+        width: 150px;
+    }
+    .project{
+       height: 400px;
+       min-width: 450px;
+    }
+
+
+.check {
+    border: 1px solid wheat;
+    border-radius: 4px ;
+    color: wheat;
+    font-size: 13px;
+    margin-top: 50px;
+    display: inline-block;
+    width: 350px;
+    a {
+        text-decoration: underline;
+        color:  rgb(248, 79, 79);
     }
 }
 
+img {
+    float: left;
+    width: 300px;
+    height: 300px;
+
+}
+}
 </style>

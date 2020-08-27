@@ -109,6 +109,7 @@ h1 {
 }
 
 .container {
+    padding-left: 0px;
     height: 100vh;
  
 }
@@ -128,7 +129,8 @@ h1 {
        max-width: 700px;
       margin-top: 35px;
        font-weight: bold;
-       margin-left: 10%;
+       margin-left: 5px;
+       margin-right: 10px;
        color: rgb(248, 79, 79) ;
        span {
             color: yellow;
@@ -143,14 +145,28 @@ h3 {
   font-family: 'Permanent Marker', cursive;
   margin-bottom: 20px;
 }
+a {
+         margin-left: 0px;
+        color: yellow;
+}
 
 img {
+    margin-left: 0px;
+    backface-visibility: hidden;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     width: 200px;
     height: 200px;
+    &:hover {
+        opacity: 0.3;
+    }
 }
 
 @media (min-width: 780px) and (max-width: 2500px) {
     .desc {
+        margin-left: 10%;
         margin-top: 35px;
         float: right;
         width: 150px;
@@ -168,7 +184,7 @@ img {
     font-size: 13px;
     margin-top: 50px;
     display: inline-block;
-    width: 350px;
+    width: 330px;
     a {
         text-decoration: underline;
         color:  rgb(248, 79, 79);

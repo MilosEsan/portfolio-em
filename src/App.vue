@@ -40,7 +40,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: rgb(230, 38, 38);
+  color: rgb(15, 3, 59);
 background-color: #050403;
 background-image: linear-gradient(132deg, #050403 0%, #6fe5ca 100%);
 

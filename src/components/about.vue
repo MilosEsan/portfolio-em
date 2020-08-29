@@ -1,19 +1,17 @@
 <template>
-<div>
+  <div>
     <h1>About Me</h1>
     <p>Content preparation in progress...</p>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style lang="scss" scoped>
 h1 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   margin-bottom: 40px;
 }
 </style>

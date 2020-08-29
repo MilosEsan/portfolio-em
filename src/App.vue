@@ -26,6 +26,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Srisakdi:wght@700&display=swap');
 
 #app {
+  font-family: Roboto Condensed, sans-serif;
   .navbar {
     margin-bottom: 40px;
     }

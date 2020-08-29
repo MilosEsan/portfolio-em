@@ -2,6 +2,8 @@ import home from './components/home.vue'
 import about from './components/about.vue'
 import projects from './components/projects.vue'
 import contact from './components/contact.vue'
+import details from './components/details.vue'
+
 
 export default [{
         path: '/',
@@ -18,5 +20,10 @@ export default [{
     {
         path: "/contact",
         component: contact
+    },
+    {
+        name: 'details',
+        path: '/projects/:id',
+        component: details
     }
 ]

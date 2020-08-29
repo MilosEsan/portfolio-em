@@ -4,9 +4,14 @@ import Vuelidate from "vuelidate"
 import VueRouter from 'vue-router'
 import Routes from "./routes.js"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import VueResource from 'vue-resource'
+
+
+Vue.use(VueResource);
 
 Vue.use(VueRouter)
 Vue.use(Vuelidate)
+
 
 Vue.config.productionTip = false
 

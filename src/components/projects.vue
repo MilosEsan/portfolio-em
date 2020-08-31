@@ -97,7 +97,7 @@ export default {
             "fetched Google Books API",
             "expandable sidebar",
             "different ways to use 'toggle functionalities'",
-            "animation, transition and rotation using <b style='color: white;'>css</b> (scss) rules",
+            "animation, transition and rotation using different <b style='color: white;'>css</b> (scss) rules and <b style='color: white;'>Bootstrap</b> classes",
           ],
         },
         {
@@ -130,7 +130,7 @@ export default {
           features: [
             "Regulating events with <b style='color: white;'>Vue.JS</b> directives",
             "emitting events from one component to another",
-            "Background plugins - <i style='color: white'>particles.js<i>",
+            "Background plugins - <i style='color: white'>particles.js</i> and responsive mode, supported by <b style='color: white;'>Bootstrap</b> classes",
             "displaying reactive changes by different styled classes",
           ],
         },
@@ -162,13 +162,14 @@ export default {
           describe:
             "Some pages with custom design coded in react. Although this work is not really important nor it's finished - it's layout is something that I personally like to display.",
           description:
-            "In the time when I was transfered from working with Python and Django - back to front-end coding, a significant amount of refreshing was needed to get me back on track for working with javascript and it's libaries. So, I got the task to code those pages - previousley designed in shape of 'figma' pictures. Not much functionalities and events based on virtual DOM were  required here ( there's just one 'on-click' event ), but - some possibly unique interfaces are coded and I want them to be displayed in this portfolio.",
+            "In the time when I was transfered from working with Python and Django - back to front-end coding, a significant amount of refreshing was needed to get me back on track for working with javascript and it's libaries. So, I got the task to code those pages - previousley designed in shape of 'figma' pictures. Not much functionalities and events based on virtual DOM were  required here ( there's just one 'on-click' event ), but - some possibly unique interfaces are coded and I want them to be displayed in this portfolio. Also, those 'unconventional' and messy settings of css selectors are good example of me moving back from back-end to front-end development and starting to refresh myself for css coding, which will be 100% better than these lines.",
           features: [
             "work with svg elements",
             "custom 'login-page' design",
             "setting a state of the component",
-            "implementing bootstrap",
+            "implementing <b style='color: white;'> Bootstrap</b>",
             "<b style='color: white'>React</b> router (to make 'a component into the page')",
+            "messy and unconventional <b style='color: white;'>css</b> coding with its purpose"
           ],
         },
         {

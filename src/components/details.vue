@@ -11,7 +11,7 @@
       >
     </h1>
     <a>
-      <img @click="live_open" :src="this.img" />
+      <img v-bind:class="{'img': live}" @click="live_open" :src="this.img" />
     </a>
     <h4>Description :</h4>
     <article>{{ this.description }}</article>
@@ -86,6 +86,16 @@ img {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   width: 400px;
   height: 400px;
+}
+
+.img {
+  margin-left: 0px;
+  backface-visibility: hidden;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 400px;
+  height: 400px;
   cursor: pointer;
   &:hover {
     opacity: 0.3;
@@ -148,6 +158,12 @@ article {
     width: 250px;
     height: 250px;
   }
+
+  .img {
+    width: 250px;
+    height: 250px;
+  }
+
   ul {
     margin: 20px;
     text-align: left;

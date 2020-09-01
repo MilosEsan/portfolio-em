@@ -10,15 +10,15 @@ export default [{
         component: home
     },
     {
-        path: "/about",
+        path: '/about',
         component: about
     },
     {
-        path: "/projects",
+        path: '/projects',
         component: projects
     },
     {
-        path: "/contact",
+        path: '/contact',
         component: contact
     },
     {

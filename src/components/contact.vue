@@ -73,7 +73,15 @@
             <span v-if="!$v.email.isUnique">Please, enter a valid e-mail!</span>
           </div>
         </div>
-
+        <div style="margin-left: 15px;" class="form-group"> 
+          <label>to:</label>
+          <input
+          type="email"
+            class="form-control"
+            ref="email2"
+            :value="myEmail"
+          >
+        </div>
         <textarea
           v-model="msgTxt"
           ref="msg-field"
@@ -84,7 +92,7 @@
         </textarea>
         <p ref="msg">(Your message)</p>
 
-        <button @click.prevent="submit()" class="btn" type="submit">
+        <button @click.prevent="submit()" class="btn" type="submit" value="Send">
           submit
         </button>
       </section>
@@ -109,6 +117,7 @@ export default {
   name: "contact",
   data() {
     return {
+      myEmail: "esan.milos@gmail.com",
       msgTxt: "",
       submitted: false,
       firstname: "",

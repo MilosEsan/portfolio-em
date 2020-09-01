@@ -145,7 +145,7 @@ export default {
           description:
             "As I was getting more understanding about full-stack javascript programming, I decided to make some more 'server-side oriented' code. Basic idea was to make a dictionary-like app with mechanism which takes an input value from user, saves it and makes it available later to the sam user. This availability is based on comparation with a word which is inserted in 'search-engine' input field. If a wanted search input value is the same as one of the random previousley saved values ('input word1' or 'input word2') - a result will be displayed. That concept works like classic 'foreign language dictionary', but this dictionary can be customized by the user (saving wanted words by himself). So, it has two simple web services - one 'to save' and another 'to search'. When I achieved that goal and made a 'mechanism' which implements all that is mentioned here, I dedided to stop a further development of this app.",
           features: [
-            "<b style='color: white;'>node.js</b> with <b style='color: white;'>express.js</b> as a middleware tool",
+            "<b style='color: white;'>node.js</b> with <b style='color: white;'>express.js</b> and some middleware tools",
             "body-parser module, which takes all values from client (html structure, input fields), and parses them to the server",
             "basic work with JSON file - a custom small-size API created",
             "asynchronous javascript programming (async-await and promises)",
@@ -238,7 +238,7 @@ h1 {
   .desc {
     min-width: 200px;
     max-width: 700px;
-    margin-top: 35px;
+    margin-top: 20px;
     font-weight: bold;
     margin-left: 5px;
     margin-right: 10px;

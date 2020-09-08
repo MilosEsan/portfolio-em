@@ -76,6 +76,7 @@ import img3 from "../assets/to-do.png";
 import img4 from "../assets/create-read.png";
 import img5 from "../assets/react-pages.png";
 import img6 from "../assets/concat-script.png";
+import img7 from "../assets/pp-pages.jpg";
 
 export default {
   data() {
@@ -187,6 +188,23 @@ export default {
             "utilizes os module and method <i style='color: white'>system()</i>",
             "commands of <i style='color: white;'>FFMPEG </i> libary are used in this script to make it works",
             "text file as improvised data base",
+          ],
+        },
+        {
+          name: "PP-pages",
+          img: img7,
+          live: false,
+          git: "https://github.com/MilosEsan/pp-pages.git",
+          id: 2.4,
+          describe:
+            "More of custom designs. This work contains several different designs, which are turned to code blocks for different pages",
+          description:
+            "'PP' stands for pixel-perfect design. To make these pages, I used .PSD files to extract colors and font families from design pics. After that, I applied those 'extracts' to make identical design with web-dev tools. Coding part contains different approaches to styling backgrounds. Feel free to check the source code of this project, so you can get more familiar with my style of coding in plain html and css",
+          features: [
+            "Custom <b style='color: white;'>css</b> and <b style='color: white;'>HTML</b> code",
+            "different ways of displaying backgrounds",
+            "<b style='color: white;'>Bootstrap</b> classes utilized in making of responsive mode displaying (pg-3)",
+            "Different color pickers and Photoshop-like tools are used as backup",
           ],
         },
       ],

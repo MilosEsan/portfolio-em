@@ -13,6 +13,7 @@
     <a>
       <img v-bind:class="{'img': live}" @click="live_open" :src="this.img" />
     </a>
+    <p class="switch" ref="switch" :style="{visibility: warning ? 'visible' : 'hiden'}"> Only description of this work is available here. You can also check the source code on git, or check the rest of my works from <a href='/projects'>projects</a> list.</p>
     <h4>Description :</h4>
     <article>{{ this.description }}</article>
     <div class="ul">
@@ -35,12 +36,19 @@ export default {
       features: this.$route.params.features,
       live: this.$route.params.live,
       git: this.$route.params.git,
+
+      warning: false,
+    
     };
   },
 
   methods: {
     live_open() {
+
       if (this.live != false) window.open(this.live);
+      else {
+        this.warning = true;
+      }
     },
     git_open() {
       window.open(this.git);
@@ -131,6 +139,37 @@ article {
   margin-right: 200px;
 }
 
+.switch {
+  transition: all 0.3s;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 13px;
+  padding: 10px;
+font-family: Roboto Condensed, sans-serif;
+background-color: rgba(175, 53, 53, 0.8);
+   position:relative;
+  display:block;
+  color: yellow;
+    height: 100px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 99;
+    margin-top: -150px;
+    margin-bottom: 200px;
+    visibility: hidden;
+  }
+
+  .switch a {
+    
+      color: wheat;
+      text-decoration: underline;
+
+      &:hover{
+        color: yellow;
+      }
+  }
+
 @media (min-width: 350px) and (max-width: 700px) {
   h1 {
     small {
@@ -162,6 +201,10 @@ article {
   .img {
     width: 250px;
     height: 250px;
+  }
+
+  .switch {
+  
   }
 
   ul {
